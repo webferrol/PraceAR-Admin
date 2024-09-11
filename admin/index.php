@@ -51,6 +51,25 @@ $result = $conexion->query($sql);
                 </form>
             </search>
         </caption>
+
+        <!-- Paginación superior -->
+        <div class="pagination">
+            <?php if ($current_page > 1): ?>
+                <a href="?page=<?= $current_page - 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">&laquo; Anterior</a>
+            <?php endif; ?>
+
+            <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                <a class="<?= $i == $current_page ? 'active' : '' ?>"
+                    href="?page=<?= $i ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">
+                    <?= $i ?>
+                </a>
+            <?php endfor; ?>
+
+            <?php if ($current_page < $total_pages): ?>
+                <a href="?page=<?= $current_page + 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">Siguiente &raquo;</a>
+            <?php endif; ?>
+        </div>
+
         <thead style="font-size: .95em;">
             <tr>
                 <th>Editar</th>
@@ -124,11 +143,10 @@ $result = $conexion->query($sql);
         <p id="zoomed-name"></p>
     </div>
 
-    <!-- Enlaces de Paginación -->
+    <!-- Paginación inferior -->
     <div class="pagination">
         <?php if ($current_page > 1): ?>
-            <a href="?page=<?= $current_page - 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">&laquo;
-                Anterior</a>
+            <a href="?page=<?= $current_page - 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">&laquo; Anterior</a>
         <?php endif; ?>
 
         <?php for ($i = 1; $i <= $total_pages; $i++): ?>
@@ -139,8 +157,7 @@ $result = $conexion->query($sql);
         <?php endfor; ?>
 
         <?php if ($current_page < $total_pages): ?>
-            <a href="?page=<?= $current_page + 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">Siguiente
-                &raquo;</a>
+            <a href="?page=<?= $current_page + 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">Siguiente &raquo;</a>
         <?php endif; ?>
     </div>
 
