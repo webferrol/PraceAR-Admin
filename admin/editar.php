@@ -19,8 +19,7 @@ require_once(CSS_ADMIN . 'editar_admin.php');
     $resultado = $conexion->query($sql);
 
     if ($resultado->num_rows <= 0) {
-        header('Location: ' . $servidor . 'http://localhost/mercado/admin/error.php');
-        echo "Error al obtener los datos del puesto";
+        echo "<h2>Error al obtener los datos del puesto</h2>";
         exit;
     }
 

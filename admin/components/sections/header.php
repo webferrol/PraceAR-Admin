@@ -9,6 +9,7 @@ require_once(HELPERS . 'get-language.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de administración</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel='icon' href='./img/favicon.png' type='image/png'>
 </head>
 
 <body class="container">

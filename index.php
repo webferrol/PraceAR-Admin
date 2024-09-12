@@ -6,8 +6,6 @@ session_start();
 require_once('./constants.php');
 require_once(CONNECTION);
 
-echo "<link rel='icon' href='./img/favicon.png' type='image/png' />";
-
 // Verificar si el usuario ha iniciado sesión
 if (isset($_SESSION['login'])) {
 
