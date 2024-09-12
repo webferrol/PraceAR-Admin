@@ -1,1 +1,0 @@
-<a href="./admin/logout_session.php" class="enlace_cierre_sesion">Cerrar sesión</a>

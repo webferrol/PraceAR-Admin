@@ -12,16 +12,14 @@ require_once(HELPERS . 'get-language.php');
 </head>
 
 <body class="container">
-    <header>
-        <h1 id="cabecera_pagina_edicion">Admin: PraceAR</h1>
+    <header style="display:flex; justify-content: space-around">
+        <h1 id="cabecera_pagina_edicion">Admin: PraceAR
         <strong style="font-size: .8rem">Idioma actual: <img style="box-shadow: 0 0 2px 1px black;" width="15"
-                height="15" src="<?= FLAG_IMAGES_URL . (getLanguage()) . ".png" ?>" alt="<?= getLanguage() ?>"></strong>
-        <nav style="display: flex; justify-content: space-around; align-items: center;">
-            <?php
-            require_once(COMPONENT_ADMIN . "main-menu.php");
-            require_once(COMPONENT_ADMIN . "languages.php");
-            require_once(COMPONENT_ADMIN . "logout.php");
-            ?>
-        </nav>
+                height="15" src="<?= FLAG_IMAGES_URL . (getLanguage()) . ".png" ?>" alt="<?= getLanguage() ?>"></strong></h1>
+        <?php
+        require_once(COMPONENT_ADMIN . "main-menu.php");
+        require_once(COMPONENT_ADMIN . "languages.php");
+        ?>
+
     </header>
 </body>
