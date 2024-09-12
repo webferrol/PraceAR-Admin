@@ -1,5 +1,5 @@
 <?php
-require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . "helpers/clean-input.php");
+require_once(HELPERS . 'clean-input.php');
 
 $err = '';
 
