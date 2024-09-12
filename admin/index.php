@@ -51,7 +51,7 @@ $result = $conexion->query($sql);
                 </form>
             </search>
             <!-- Paginación superior -->
-            <div class="pagination">
+            <div class="pagination" style="font-size: .7em;">
                 <?php if ($current_page > 1): ?>
                     <a href="?page=<?= $current_page - 1 ?>&caseta=<?= $_GET['caseta'] ?? '' ?>&lang=<?= getLanguage() ?>">&laquo;
                         Anterior</a>
