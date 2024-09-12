@@ -24,7 +24,6 @@ require_once(CSS_ADMIN . 'editar_admin.php');
         exit;
     }
 
-    $resultado = $conexion->query($sql);
     $fila = $resultado->fetch_assoc();
     ?>
     <h2 id="cabecera_tabla">Datos del puesto <?= $fila["id"] ?></h2>
@@ -45,20 +44,19 @@ require_once(CSS_ADMIN . 'editar_admin.php');
         <input id="nombre" type="text" name="nombre" value="<?= $fila["nombre"] ?>">
     </div>
     <div>
-
-        <label for="imagen">Imagen</label>
+        <!-- Mostrar el label adecuado dependiendo de si existe o no una imagen -->
         <?php
         $imagenPath = "assets/" . $fila["caseta"] . ".jpg";
         if (file_exists($imagenPath)): ?>
-            <div style="display: flex;gap: 2rem;">
-                <button style="width: 200px; height: 96px; background-color: red" id="eliminar_imagen"
-                    name="eliminar_imagen" type="submit" value="1">Eliminar</button>
-                <img src="<?= $imagenPath ?>" alt="Imagen del puesto" class="zoomable" style="object-fit: cover; height: 100px;">
+            <label for="imagen">Imagen actual</label>
+            <div style="display: flex; gap: 2rem;">
+                <button style="width: 200px; height: 96px; background-color: red" id="eliminar_imagen" name="eliminar_imagen" type="submit" value="1">Eliminar</button>
+                <img id="imagen" src="<?= $imagenPath ?>" alt="Imagen del puesto" class="zoomable" style="object-fit: cover; height: 100px;">
             </div>
         <?php else: ?>
+            <label for="imagen">Subir nueva imagen</label>
             <input type="file" id="imagen" name="imagen" accept=".jpg, .jpeg">
         <?php endif; ?>
-
     </div>
     <div>
         <label for="contacto">Contacto</label>
