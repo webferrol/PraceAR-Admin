@@ -2,4 +2,5 @@
 
 ## Use Case
 
-![UseCaseDiagram1](https://github.com/user-attachments/assets/b697de85-be7f-4f85-b3c1-f0601175d985)
+![UseCaseDiagram1](https://github.com/user-attachments/assets/1862d034-6f22-49d1-aba1-f52fe10bea83)
+
