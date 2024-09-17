@@ -29,6 +29,10 @@
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
 
+    .zoomed-container img:hover {
+        transform: scale(1.05);
+    }
+
     .zoomed-container p {
         color: white;
         font-size: 1.5rem;
