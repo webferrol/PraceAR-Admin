@@ -1,6 +1,5 @@
 # Pracear 
 
-## Use Case
+## Requisitos de la App
 
-![UseCaseDiagram1](https://github.com/user-attachments/assets/1862d034-6f22-49d1-aba1-f52fe10bea83)
-
+![Requisitos](https://github.com/user-attachments/assets/2ba5d275-9420-436a-bc1a-619ddfcd072d)
