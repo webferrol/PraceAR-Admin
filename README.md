@@ -18,11 +18,11 @@
 ### Página de administración con una búsqueda hecha
 ![Captura de pantalla (11)](https://github.com/user-attachments/assets/d67957a9-62be-47b3-b95b-8fe979b334ff)
 
-### Imagen y nombre de un puesto ampliados en la página de administración (haciendo click sobre la imagen)
+### Imagen y nombre de un puesto ampliados en la página de administración (haciendo clic sobre la imagen)
 ![Captura de pantalla (12)](https://github.com/user-attachments/assets/18eeee0d-30c9-48e4-a6f9-8f5722dd57e0)
 ### Página de naves con mapas de las ameas, naves y murallones
 ![Captura de pantalla (13)](https://github.com/user-attachments/assets/4724d313-b4ef-44e4-ba9e-e784c8147645)
-### Imagen de un mapa ampliada en la página de naves con el nombre y el rango de naves correspondientes (como antes, para ampliar hacer click en la imagen o en el texto)
+### Imagen de un mapa ampliada en la página de naves con el nombre y el rango de naves correspondientes (como antes, para ampliar hacer clic en la imagen o en el texto)
 ![Captura de pantalla (14)](https://github.com/user-attachments/assets/5454cbac-ddea-4cf4-a95f-f60360765a69)
 ### Página de cambio de contraseña
 ![Captura de pantalla (15)](https://github.com/user-attachments/assets/74a76e2e-696a-4c07-b649-64d44c4eb7b0)
