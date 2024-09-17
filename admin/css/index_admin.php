@@ -70,4 +70,29 @@
         font-weight: bold;
         border-radius: 5px;
     }
+
+    .tabla_puestos {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .tabla_puestos caption {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .tabla_puestos thead {
+        font-size: .95em;
+    }
+
+    .tabla_puestos tbody {
+        font-size: .9em;
+    }
+
+    .tabla_puestos th,
+    .tabla_puestos td {
+        padding: 10px;
+        text-align: center;
+    }
 </style>
