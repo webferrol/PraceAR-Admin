@@ -66,7 +66,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -32,
+											"left": 32,
 											"top": -16,
 											"height": 13
 										},
@@ -77,9 +77,9 @@
 												"$ref": "AAAAAAGR7WNzYubFmn0="
 											},
 											"font": "Arial;13;1",
-											"left": 213,
+											"left": 245,
 											"top": 47,
-											"width": 631,
+											"width": 607,
 											"height": 13,
 											"text": "PraceAR Admin API"
 										},
@@ -91,7 +91,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -32,
+											"left": 32,
 											"top": -16,
 											"width": 80.9072265625,
 											"height": 13,
@@ -105,16 +105,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -32,
+											"left": 32,
 											"top": -16,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 208,
+									"left": 240,
 									"top": 40,
-									"width": 641,
+									"width": 617,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGR7WNzYubGs/E="
@@ -131,9 +131,9 @@
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 208,
+							"left": 240,
 							"top": 40,
-							"width": 640,
+							"width": 616,
 							"height": 536,
 							"nameCompartment": {
 								"$ref": "AAAAAAGR7WNzYubFmn0="
@@ -554,7 +554,7 @@
 											"top": 204,
 											"width": 137,
 											"height": 13,
-											"text": "Ver listado de puestos"
+											"text": "Listar puestos"
 										},
 										{
 											"_type": "LabelView",
@@ -587,7 +587,7 @@
 									"font": "Arial;13;0",
 									"left": 455,
 									"top": 197,
-									"width": 147.9853515625,
+									"width": 147,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGR7WXwqeqOTzk="
@@ -5673,7 +5673,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGR7WNDIea9t9Y="
 					},
-					"name": "Ver listado de puestos",
+					"name": "Listar puestos",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
