@@ -51,6 +51,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $err .= '<li>Al menos un caracter especial</li>';
         $err .= '</ul>';
     }
+
+    // Destruir las variables de contraseñas por motivos de seguridad
+    unset($oldPassword);
+    unset($newPassword);
+    unset($confirmPassword);
 }
 ?>
 
