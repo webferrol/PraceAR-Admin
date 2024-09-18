@@ -1,4 +1,6 @@
-# Pracear 
+# PraceAR
+
+Clonar el repositorio en una carpeta llamada appventurers
 
 ## Requisitos de la App
 
@@ -6,7 +8,7 @@
 
 ## Guía de uso
 
-- Lo primero que debe hacer es iniciar sesión.
+- Lo primero que debe hacer es importar la base de datos, crear un usuario con su contraseña encriptada en md5 e iniciar sesión.
 - Tras iniciar sesión se le redigirirá a la tabla de administración donde podrá buscar puestos, cambiar de idioma, editar un puesto o una traducción del mismo, cambiar su contraseña o ver un mapa de las ameas, naves y murallones
 
 
