@@ -58,4 +58,3 @@ function saveImage($files, $newFileName)
 
     return $status;
 }
-?>
