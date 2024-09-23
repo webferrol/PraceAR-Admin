@@ -1,20 +1,24 @@
 <style>
+    /* Estilos generales */
     /* Estilos del contenedor flotante para la imagen y nombre ampliados */
     .zoomed-container {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        z-index: 9999;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.3s ease;
+        z-index: 9999;
     }
 
     .zoomed-container.show {
@@ -23,8 +27,8 @@
     }
 
     .zoomed-container img {
-        max-width: 90%;
-        max-height: 70%;
+        max-width: 100%;
+        max-height: 80vh;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
@@ -37,20 +41,33 @@
         color: white;
         font-size: 1.5rem;
         margin-top: 15px;
+        text-align: center;
+        max-width: 90%;
     }
 
     .zoomable {
         cursor: pointer;
     }
 
-    .zoomed-container::before {
-        content: '×';
+    .zoomed-container .close-button {
         position: absolute;
         top: 10px;
         right: 20px;
         font-size: 2rem;
         color: white;
         cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        .zoomed-container p {
+            font-size: 1.2rem;
+        }
+
+        .zoomed-container .close-button {
+            font-size: 1.5rem;
+            top: 5px;
+            right: 10px;
+        }
     }
 
     .pagination {

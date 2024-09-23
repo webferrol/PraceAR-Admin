@@ -141,6 +141,7 @@ $result = $conexion->query($sql);
 
     <!-- Contenedor para mostrar la imagen ampliada y el nombre del puesto -->
     <div id="zoomed-image-container" class="zoomed-container">
+        <span class="close-button">&times;</span>
         <img id="zoomed-image" src="" alt="Imagen del puesto ampliada">
         <p id="zoomed-name"></p>
     </div>
@@ -172,17 +173,25 @@ $result = $conexion->query($sql);
     const zoomedContainer = document.getElementById('zoomed-image-container');
     const zoomedImage = document.getElementById('zoomed-image');
     const zoomedName = document.getElementById('zoomed-name');
+    const closeButton = document.querySelector('.zoomed-container .close-button');
 
     zoomableImages.forEach(image => {
-        image.addEventListener('click', function () {
+        image.addEventListener('click', function (e) {
+            e.stopPropagation();
             zoomedImage.src = this.src;
             zoomedName.textContent = this.closest('tr').querySelector('td:nth-child(5)').textContent;
             zoomedContainer.classList.add('show');
         });
     });
 
-    zoomedContainer.addEventListener('click', function () {
+    closeButton.addEventListener('click', function () {
         zoomedContainer.classList.remove('show');
+    });
+
+    zoomedContainer.addEventListener('click', function (e) {
+        if (e.target === this) {
+            zoomedContainer.classList.remove('show');
+        }
     });
 </script>
 
