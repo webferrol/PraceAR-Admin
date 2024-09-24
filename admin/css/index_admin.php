@@ -116,4 +116,9 @@
         padding: 10px;
         text-align: center;
     }
+
+    .different-background-color {
+        background-color: lightblue;
+        color: black;
+    }
 </style>

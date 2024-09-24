@@ -120,15 +120,15 @@ $result = $conexion->query($sql);
                         <td><?= $row['nave'] ?></td>
                         <td><?= $row["caseta_padre"] ?? "Ninguno" ?></td>
                         <td style="border-style: none;"></td>
-                        <td>
+                        <td class="different-background-color">
                             <a
                                 href="<?= "?page=language&codigo_idioma=" . getLanguage() . "&id=" . $row['id'] . "&lang=" . ($_REQUEST['lang'] ?? 'gl') ?>">
                                 <img loading="lazy" style="box-shadow: 0 0 2px 1px black;" width="15" height="15"
                                     src="<?= FLAG_IMAGES_URL . (getLanguage()) . ".png" ?>" alt="<?= getLanguage() ?>">
                             </a>
                         </td>
-                        <td><?= $row['tipo'] ?></td>
-                        <td>
+                        <td class="different-background-color"><?= $row['tipo'] ?></td>
+                        <td class="different-background-color">
                             <?= $row['descripcion'] ? truncateText($row['descripcion'], 30) : '' ?>
                         </td>
                     </tr>
