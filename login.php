@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de inicio de sesión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel='icon' href='./img/favicon.png' type='image/png'>
 </head>
 
 <body class="container" style="diplay: grid; place-content: center;min-height: 100vh;max-width: 600px;">
